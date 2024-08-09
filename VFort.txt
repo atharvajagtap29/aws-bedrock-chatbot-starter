@@ -1,0 +1,7 @@
+We have a version control system for our cloudfront distributions. 
+This application keeps the track of distributions configurations, and creates a new version for each configurational change.
+This application is built using React.js and FASTApi for FrontEnd & BackEnd respectively.
+
+Now our motive is to deploy this application on the server and create an AMI of that server which will be available on AWS marketplace for the community to access.
+When the client creates a server using our AMI, he will be having access to our project files.
+So we have to find a way to encrypt or hash the code such that, it still would be working, but our clients will not be able to see it. Not even the root user of the server.
